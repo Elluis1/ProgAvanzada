@@ -1,7 +1,4 @@
-require('dotenv').config({path:'..../.env'})
-process.env.api_key;
-
-const apiKey = api_key
+const apiKey = 'API_KEY'
 const url = ' https://rest.coinapi.io/v1/exchanges'
 const fetchData = async () => {
     try {
