@@ -1,0 +1,143 @@
+1 - ¿Cómo surgió el sistema de documentos distribuidos WWW?
+La World Wide Web (WWW) surgió como una solución para gestionar la creciente cantidad de información científica y facilitar su acceso de manera distribuida. El objetivo era permitir a los investigadores compartir documentos de manera eficiente a través de una red global.
+
+2 - ¿En qué año se creó la WWW? ¿Quién la creó? ¿Cuál fue el propósito inicial?
+La WWW fue creada en 1989 por Tim Berners-Lee, un científico del CERN (Organización Europea para la Investigación Nuclear). El propósito inicial era facilitar la compartición de documentos entre científicos a través de un sistema de hipertexto, permitiendo a los usuarios acceder a documentos interrelacionados mediante enlaces.
+
+3 - ¿Sobre qué red funcionaba? ¿Cuáles fueron los componentes iniciales?
+La WWW funcionaba sobre la red Internet, que ya existía como una infraestructura global para la interconexión de computadoras. Los componentes iniciales incluían:
+HTTP (Hypertext Transfer Protocol): El protocolo utilizado para la transferencia de documentos.
+HTML (Hypertext Markup Language): El lenguaje de marcado utilizado para crear y estructurar documentos.
+URI (Uniform Resource Identifier): Un sistema para identificar de manera única los recursos en la web.
+WWW en la Actualidad
+
+4 - Nombre y describa las distintas etapas de evolución en la web.
+Web 1.0 (1991-2004): La primera etapa, centrada en documentos estáticos y la lectura pasiva de contenido. Los usuarios eran principalmente consumidores de información.
+Web 2.0 (2004-2010): Introducción de la interacción y colaboración en la web, con tecnologías que permitían a los usuarios generar contenido y participar activamente (blogs, redes sociales).
+Web 3.0 (2010-presente): La web semántica, donde la información es más accesible y conectada, y la inteligencia artificial juega un papel fundamental en la personalización y en la conexión de datos.
+Web 4.0 (futura): Proyección hacia una web aún más inteligente, conectada con el Internet de las Cosas (IoT), con experiencias altamente personalizadas y autónomas.
+
+5 - ¿Qué es un Servidor WWW?
+Un servidor WWW es un software que almacena, procesa y entrega páginas web a los usuarios. Este servidor maneja solicitudes HTTP enviadas por los clientes (navegadores) y responde con el contenido solicitado, como páginas HTML, imágenes, y otros recursos.
+
+6 - ¿Qué es un cliente web?
+Un cliente web es un dispositivo o software que accede a recursos en la WWW, generalmente a través de un navegador web. Los navegadores interpretan el código HTML, CSS y JavaScript recibido de los servidores para mostrar las páginas web de manera interactiva al usuario.
+
+7 - ¿Cómo está compuesto el sistema WWW actual?
+El sistema WWW actual está compuesto por:
+Servidores Web: Que alojan los sitios web y aplicaciones.
+Navegadores Web (clientes): Que acceden a los recursos en los servidores.
+Protocolos (HTTP/HTTPS): Para la comunicación entre clientes y servidores.
+Lenguajes de programación y marcado (HTML, CSS, JavaScript): Que definen la estructura y comportamiento de las páginas web.
+Bases de datos: Que almacenan y gestionan grandes volúmenes de datos detrás de las aplicaciones web.
+
+8 - 
+
+9 - 
+
+10 - ¿Cuál es la Arquitectura del sistema distribuido de documentos?
+La arquitectura de la WWW es una arquitectura cliente-servidor distribuida. Los clientes (navegadores) solicitan documentos a los servidores web utilizando el protocolo HTTP/HTTPS. Los servidores responden a estas solicitudes enviando documentos o datos que los clientes interpretan y muestran al usuario.
+
+11 - ¿Cómo funciona el sistema WWW?
+El sistema WWW funciona mediante la comunicación entre clientes y servidores a través de solicitudes y respuestas HTTP/HTTPS. Los usuarios solicitan páginas web introduciendo una URL en un navegador, el navegador envía una solicitud al servidor, y el servidor responde con el contenido adecuado que el navegador muestra.
+
+12 - ¿Qué es HTML? ¿De dónde proviene?
+HTML (Hypertext Markup Language) es el lenguaje de marcado utilizado para crear y estructurar documentos en la web. Fue desarrollado por Tim Berners-Lee en 1991 como parte de la creación de la WWW.
+
+13 - ¿A qué se le llama página web estática? ¿y página dinámica? ¿y página activa?
+Página Web Estática: Página cuyo contenido no cambia, a menos que se modifique el código fuente. Es entregada tal cual por el servidor.
+Página Web Dinámica: Página cuyo contenido puede cambiar en función de interacciones del usuario o de la base de datos subyacente, como los blogs o foros.
+Página Web Activa: Página que incluye scripts o aplicaciones que se ejecutan en el lado del cliente, interactuando con el servidor en tiempo real, como una página que utiliza AJAX.
+
+14 - ¿Qué es una URL? ¿qué función cumple en la Web? ¿Qué es un servidor de archivos basado en URL?
+Una URL (Uniform Resource Locator) es la dirección que identifica de manera única un recurso en la web. Permite a los navegadores localizar y acceder a recursos específicos en la WWW. Un servidor de archivos basado en URL es aquel que permite acceder a archivos a través de direcciones URL, facilitando su distribución y acceso.
+
+15 - ¿Dónde y cómo se ejecuta el lenguaje HTML?
+El HTML se ejecuta en el navegador web del cliente. Cuando un navegador recibe un archivo HTML desde un servidor, lo interpreta y lo renderiza para mostrar la página web al usuario.
+
+16 - ¿Qué es un lenguaje script en la tecnología WWW?
+Un lenguaje script en la tecnología WWW es un lenguaje de programación que se ejecuta en un entorno web (generalmente en el lado del cliente, como JavaScript) para proporcionar interactividad y dinamismo a las páginas web.
+
+17 - ¿Qué es un plugin? ¿Qué es una cookie?
+Plugin: Un software adicional que se puede integrar en un navegador para proporcionar funciones adicionales, como la reproducción de contenido multimedia.
+Cookie: Un pequeño archivo de datos que un sitio web guarda en el navegador del usuario para almacenar información sobre sus preferencias y actividad en el sitio.
+
+18 - ¿Qué es JavaScript? ¿Dónde y quién ejecuta JavaScript? ¿Cómo nació JavaScript?
+JavaScript es un lenguaje de programación utilizado principalmente para crear contenido interactivo en las páginas web. Se ejecuta en el navegador del cliente y fue desarrollado por Netscape en 1995 bajo el nombre de "Mocha", luego renombrado como "JavaScript".
+
+19 - ¿Qué es un Applet de Java? ¿Cómo puede un Browser ejecutar código Java?
+Un Applet de Java es una pequeña aplicación que se ejecuta dentro de una página web utilizando el entorno Java Virtual Machine (JVM) del navegador. Los navegadores pueden ejecutar código Java mediante la integración de la JVM o de un plugin específico.
+
+20 - ¿Cómo funciona la tecnología Flash de Macromedia?
+Flash es una tecnología multimedia que permite la creación de animaciones, juegos y contenido interactivo en la web. Funciona mediante un plugin que interpreta archivos SWF (Small Web Format) y los muestra en el navegador.
+
+21 - ¿Para qué se utiliza la tecnología CGI? ¿Qué lenguajes de programación se pueden utilizar para los scripts CGI?
+CGI (Common Gateway Interface) es una tecnología utilizada para crear aplicaciones web que interactúan con el servidor. Los scripts CGI pueden ser escritos en diversos lenguajes, como Perl, Python, C, y otros.
+
+22 - ¿Qué es un “form” HTML? ¿Para qué se utiliza?
+Un "form" HTML es un elemento que permite a los usuarios enviar datos a un servidor web. Se utiliza para capturar información como nombres, direcciones, y preferencias, y luego enviar esa información al servidor para ser procesada.
+
+23 - ¿Qué son y cómo funcionan las tecnologías ASP, PHP y JSP?
+ASP (Active Server Pages): Tecnología de Microsoft que permite crear páginas web dinámicas mediante scripts que se ejecutan en el servidor.
+PHP (Hypertext Preprocessor): Un lenguaje de programación de código abierto ampliamente utilizado para el desarrollo de aplicaciones web dinámicas.
+JSP (JavaServer Pages): Tecnología de Oracle que permite la creación de contenido dinámico utilizando Java.
+
+24 - ¿Qué es DHTML? ¿y XHTML?
+DHTML (Dynamic HTML): Conjunto de tecnologías utilizadas para crear sitios web interactivos y dinámicos utilizando HTML, CSS y JavaScript.
+XHTML (Extensible Hypertext Markup Language): Versión más estricta y extensible de HTML que se basa en XML.
+
+25 - ¿Qué es XML? Explique detalladamente.
+XML (Extensible Markup Language) es un lenguaje de marcado que define reglas para la codificación de documentos en un formato que es legible tanto para humanos como para máquinas. Se utiliza para almacenar y transportar datos en la web.
+
+26 - ¿Qué son los Servicios Web? Dé un ejemplo de aplicación utilizando Servicios WEB.
+Los servicios web son aplicaciones que permiten la comunicación entre diferentes sistemas a través de la web utilizando protocolos como SOAP o REST. Un ejemplo es una API de pago en línea que permite a un sitio web procesar transacciones sin manejar directamente la información financiera del usuario.
+
+URL's, Dominios y Direcciones
+27 - ¿Qué es una URL? ¿Qué función cumple en la web? ¿Cuál es la estructura de una URL?
+Una URL es la dirección que localiza un recurso en la web. Su estructura básica incluye:
+Protocolo: (ej. http://)
+Nombre de dominio: (ej. www.example.com)
+Ruta de acceso: (ej. /path/page.html)
+
+28 - ¿Qué es un servidor de archivos basado en URL?
+Un servidor de archivos basado en URL permite a los usuarios acceder a archivos a través de una URL, que apunta a la ubicación del archivo en el servidor.
+
+29 - ¿Cuál es el formato de una URL en IPv6?
+El formato de una URL en IPv6 incluye la dirección IPv6 entre corchetes, como: http://[2001:db8::1]/path/page.html.
+
+30 - ¿Qué es un Dominio www? ¿Qué relación tiene con una URL?
+Un dominio es una parte de la URL que identifica a un sitio web en la red. El dominio es lo que los usuarios escriben para acceder a un sitio específico, como www.example.com.
+
+31 - ¿Cuál es la función del DNS en la WEB?
+El DNS (Domain Name System) traduce los nombres de dominio legibles por humanos (como www.example.com) en direcciones IP que las computadoras utilizan para identificar y comunicarse entre sí en la red.
+
+Protocolos utilizados en la WWW
+32 - ¿Cuál es la relación entre HTML y HTTP?
+HTML es el lenguaje de marcado utilizado para crear páginas web, mientras que HTTP es el protocolo utilizado para transferir estas páginas entre servidores y navegadores.
+
+33 - ¿Cuáles son las versiones de HTTP y cuáles sus diferencias?
+Las versiones principales de HTTP son:
+HTTP/1.0: La versión original, soporta conexiones no persistentes.
+HTTP/1.1: Introdujo conexiones persistentes y mejoró la eficiencia del protocolo.
+HTTP/2: Optimización del rendimiento, incluyendo la multiplexación de solicitudes y compresión de encabezados.
+HTTP/3: Basado en el protocolo QUIC, mejora la velocidad y seguridad en comparación con HTTP/2.
+
+34 - ¿Qué es MIME?
+MIME (Multipurpose Internet Mail Extensions) es un estándar que extiende el formato de los correos electrónicos para soportar texto en diferentes idiomas, y adjuntar imágenes, audio, vídeo, y otras aplicaciones.
+
+35 - Explique cómo es una solicitud HTTP.
+Una solicitud HTTP típica incluye:
+Método (GET, POST, etc.): Determina la acción a realizar.
+URL: El recurso solicitado.
+Encabezados: Información adicional sobre la solicitud.
+Cuerpo: Datos enviados con la solicitud (en solicitudes POST).
+
+36 - ¿Cuáles son los métodos de HTTP 1? Enumere y describa el funcionamiento de cada uno.
+GET: Solicita un recurso.
+POST: Envía datos al servidor para ser procesados.
+PUT: Sube o reemplaza un recurso.
+DELETE: Elimina un recurso.
+HEAD: Similar a GET, pero solo solicita los encabezados.
+OPTIONS: Describe las opciones de comunicación disponibles para el recurso.
+TRACE: Realiza una prueba de bucle de solicitud.
+CONNECT: Establece un túnel hacia el servidor, usado para conexiones seguras (HTTPS).
