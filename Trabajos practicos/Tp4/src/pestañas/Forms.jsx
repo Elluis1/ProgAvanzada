@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export const Forms = () => {
-    const [proyecto, setProyecto] = useState("")
+export const Forms = ({proyecto, setProyecto}) => {
+    const [nombre, setNombre] = useState("")
     const [tipo, setTipo] = useState("")
     const [persona, setPersona] = useState("")
     const [storyPoints, setStoryPoints] = useState("")
@@ -9,18 +9,35 @@ export const Forms = () => {
     const [fecha, setFecha] = useState(Date)
     const [resumen, setResumen] = useState("")
 
-    const handlesubmit = (e) => {
-        e.preventDefault
+    const [error,setError] = useState(false)
 
-        const tasklist = [{
-        proyecto,
+    const handlesubmit = (e) => {
+        e.preventDefault()
+
+            //validar que los campos esten llenos
+    if([nombre, tipo, persona, storyPoints, prioridad, fecha,resumen].length < 1) {
+        console.log('Hay al menos un campo vacio')
+  
+        setError(true)
+        return
+      }
+
+      setError(false)
+
+        const Proyecto = {
+        nombre,
         tipo,
         persona,
         storyPoints,
         prioridad,
         fecha,
         resumen
-        }]
+        }
+
+        setProyecto([
+            ...proyecto,
+            Proyecto
+        ])
 
         setProyecto("")
         setTipo("")
@@ -34,7 +51,7 @@ export const Forms = () => {
     return (
         <div>
             <form onSubmit={handlesubmit}>
-                <input placeholder="Nombre del proyecto" onSubmit={(e) => {setProyecto(e.target.value)}}></input>
+                <input placeholder="Nombre del proyecto" onSubmit={(e) => {setNombre(e.target.value)}}></input>
                 <input placeholder="Tipo" onSubmit={(e) => {setTipo(e.target.value)}}></input>
                 <input placeholder="Nombre de la persona asignada" onSubmit={(e) => {setPersona(e.target.value)}}></input>
                 <input placeholder="Story points" onSubmit={(e) => {setStoryPoints(e.target.value)}}></input>
@@ -43,19 +60,6 @@ export const Forms = () => {
                 <input placeholder="Resumen" onSubmit={(e) => {setResumen(e.target.value)}}></input>
                 <button type="submit">Subir</button>
             </form>
-            <h1>
-                <li>
-                    {/* {! tasklist.length > 0 ? 
-                    (tasklist.map(task => {
-                            <li>
-                                ${task.proyecto} - ${task.tipo} - ${task.persona} - ${task.storyPoints} - ${task.resumen} - ${task.fecha} - ${task.resumen} - 
-                            </li>
-                        })) : (
-                            <header>No hay Tareas cargadas</header>
-                        )
-                    } */}
-                </li>
-            </h1>
         </div>
     )
 }
