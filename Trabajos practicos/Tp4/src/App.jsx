@@ -1,5 +1,4 @@
 import { Forms } from './pestañas/Forms.jsx'
-import { ListadoProyectos } from './pestañas/ListadoProyectos.jsx'
 import './index.css'
 import { useState } from 'react'
 
@@ -11,9 +10,6 @@ export const App = () => {
           <Forms
           proyecto={proyecto}
           setProyecto={setProyecto}
-           />
-          <ListadoProyectos
-            proyecto={proyecto}
            />
           </div>
         </div>

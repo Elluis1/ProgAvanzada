@@ -1,36 +1,34 @@
-import { Forms } from "./Forms"
-
 export const Proyecto = ({proyecto}) => {
     const {nombre, tipo, persona, storyPoints, prioridad, fecha, resumen} = proyecto
 
     return (
-        <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rouded-xl">
+        <div key={nombre} className="mx-5 my-10 bg-white shadow-md px-5 py-10 rouded-xl">
         <p className="font-bold mb-3 text-gray-700 uppercase">Nombre: {''}
-            <span className="font-normal normal-case">{proyecto.nombre}</span>
+            <span key={nombre} className="font-normal normal-case">{nombre}</span>
         </p>
     
         <p className="font-bold mb-3 text-gray-700 uppercase">Tipo: {''}
-            <span className="font-normal normal-case">{tipo}</span>
+            <span key={tipo} className="font-normal normal-case">{tipo}</span>
         </p>
     
         <p className="font-bold mb-3 text-gray-700 uppercase">Persona: {''}
-            <span className="font-normal normal-case">{persona}</span>
+            <span key={persona} className="font-normal normal-case">{persona}</span>
         </p>
     
         <p className="font-bold mb-3 text-gray-700 uppercase">Story Points: {''}
-            <span className="font-normal normal-case">{storyPoints}</span>
+            <span key={storyPoints} className="font-normal normal-case">{storyPoints}</span>
         </p>
     
         <p className="font-bold mb-3 text-gray-700 uppercase">Prioridad: {''}
-            <span className="font-normal normal-case">{prioridad}</span>
+            <span key={prioridad} className="font-normal normal-case">{prioridad}</span>
         </p>
     
         <p className="font-bold mb-3 text-gray-700 uppercase">Fecha: {''}
-            <span className="font-normal normal-case">{fecha}</span>
+            <span key={fecha} className="font-normal normal-case">{fecha}</span>
         </p>
     
         <p className="font-bold mb-3 text-gray-700 uppercase">Resumen: {''}
-            <span className="font-normal normal-case">{resumen}</span>
+            <span key={resumen} className="font-normal normal-case">{resumen}</span>
         </p>
     
         </div>

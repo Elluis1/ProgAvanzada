@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Proyecto } from "./Proyecto";
 
 export const Forms = ({proyecto, setProyecto}) => {
     const [nombre, setNombre] = useState("")
@@ -14,17 +15,16 @@ export const Forms = ({proyecto, setProyecto}) => {
     const handlesubmit = (e) => {
         e.preventDefault()
 
-            //validar que los campos esten llenos
-    if([nombre, tipo, persona, storyPoints, prioridad, fecha,resumen].length < 1) {
-        console.log('Hay al menos un campo vacio')
-  
-        setError(true)
-        return
-      }
-
-      setError(false)
+ // Validar que los campos estén llenos
+ if ([nombre, tipo, persona, storyPoints, prioridad, fecha, resumen].some(field => field === "")) {
+    console.log('Hay al menos un campo vacío');
+    setError(true);
+    return;
+}
+setError(false);
 
         const Proyecto = {
+        id: Date.now(),
         nombre,
         tipo,
         persona,
@@ -43,9 +43,14 @@ export const Forms = ({proyecto, setProyecto}) => {
         setPersona('')
         setStoryPoints('')
         setPrioridad('')
-        setFecha('')
+        setFecha(Date)
         setResumen('')
     }
+    // Función para eliminar un proyecto
+    const eliminarProyecto = (id) => {
+        const proyectosActualizados = proyecto.filter(proj => proj.id !== id);
+        setProyecto(proyectosActualizados);
+    };
 
     return (
         <div>
@@ -55,10 +60,26 @@ export const Forms = ({proyecto, setProyecto}) => {
                 <input value={persona} placeholder="Nombre de la persona asignada" onChange={(e) => {setPersona(e.target.value)}}></input>
                 <input value={storyPoints} placeholder="Story points" onChange={(e) => {setStoryPoints(e.target.value)}}></input>
                 <input value={prioridad} placeholder="Prioridad" onChange={(e) => {setPrioridad(e.target.value)}}></input>
-                <input type="date" onSubmit={(e) => {setFecha(e.target.value)}}></input>
+                <input type="date" onChange={(e) => {setFecha(e.target.value)}}></input>
                 <input value={resumen} placeholder="Resumen" onChange={(e) => {setResumen(e.target.value)}}></input>
                 <button type="submit">Subir</button>
             </form>
+        <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-scroll">
+        <h2 className="font-black text-3xl text-center">Listado de Proyectos</h2>
+        <p className="text-xl mt-5 mb-10 text-center">Administra tus {''} 
+        <span className="text-indigo-600 font-bold">proyectos</span> aquí
+        </p>
+
+        {proyecto.map(proyecto => (
+            <div>
+            <Proyecto
+                key={proyecto.id}
+                proyecto={proyecto}
+            />
+            <button onClick={() => eliminarProyecto(proyecto.id)}>Eliminar</button>
+            </div>
+        ))}
         </div>
+    </div>
     )
 }
