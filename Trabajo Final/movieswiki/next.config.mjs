@@ -6,7 +6,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'image.tmdb.org',
         port: '',
-        pathname: '/t/p/w500/**', // Permite imágenes con el tamaño adecuado
+        pathname: '/t/p/w500/**',
       },
     ],
   },
