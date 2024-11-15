@@ -10,10 +10,10 @@ const HomePage = ({ initialMovies, totalPages }) => {
     const [movies, setMovies] = useState(initialMovies);
     const [page, setPage] = useState(1);
     const [query, setQuery] = useState('');
-    const [isLoading, setIsLoading] = useState(false); // Estado para indicar si se está cargando la búsqueda
+    const [isLoading, setIsLoading] = useState(false);
 
     const fetchMovies = async (searchQuery, pageNumber) => {
-        setIsLoading(true); // Activar la carga
+        setIsLoading(true);
         const url = searchQuery
             ? `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${searchQuery}&page=${pageNumber}`
             : `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&page=${pageNumber}`;
@@ -22,12 +22,12 @@ const HomePage = ({ initialMovies, totalPages }) => {
         const data = await response.json();
         setMovies(data.results);
         setPage(pageNumber);
-        setIsLoading(false); // Desactivar la carga
+        setIsLoading(false);
     };
 
     const handleSearch = (e) => {
-        e.preventDefault(); // Prevenir el comportamiento por defecto del formulario
-        fetchMovies(query, 1); // Llamar a la API para buscar películas basadas en la consulta
+        e.preventDefault();
+        fetchMovies(query, 1);
     };
 
     return (
@@ -44,8 +44,6 @@ const HomePage = ({ initialMovies, totalPages }) => {
                     Buscar
                 </button>
             </form>
-
-            {/* Muestra un mensaje de carga mientras se obtienen los datos */}
             {isLoading && <p>Cargando...</p>}
 
             <div className="movie-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
@@ -65,7 +63,7 @@ const HomePage = ({ initialMovies, totalPages }) => {
                         </Link>
                     ))
                 ) : (
-                    <p>No se encontraron películas.</p> // Mostrar mensaje si no hay resultados
+                    <p>No se encontraron películas.</p>
                 )}
             </div>
 
@@ -77,6 +75,7 @@ const HomePage = ({ initialMovies, totalPages }) => {
                 >
                     Anterior
                 </button>
+                <a>{page}</a>
                 <button
                     onClick={() => fetchMovies(query, page + 1)}
                     className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"

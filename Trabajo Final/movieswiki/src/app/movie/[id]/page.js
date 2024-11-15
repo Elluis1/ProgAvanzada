@@ -1,4 +1,3 @@
-// src/app/movie/[id]/page.js
 import Image from 'next/image';
 
 const apiKey = 'ba595633075b15efa4b468c42dfab029';
