@@ -15,7 +15,6 @@ export default async function MovieDetails({ params }) {
     return (
         <div className="container mx-auto p-6 bg-gray-400">
             <div className="flex flex-col items-center sm:flex-row sm:items-start sm:space-x-8">
-                {/* Imagen de la película */}
                 <div className="mb-6 sm:mb-0">
                     <Image
                         src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -26,7 +25,6 @@ export default async function MovieDetails({ params }) {
                     />
                 </div>
 
-                {/* Detalles de la película */}
                 <div className="flex-1">
                     <h1 className="text-3xl font-bold text-gray-800 mb-4">{movie.title}</h1>
                     <p className="text-black text-lg mb-4">{movie.overview}</p>
@@ -35,7 +33,6 @@ export default async function MovieDetails({ params }) {
 
                     <h2 className="text-2xl font-semibold text-gray-800 mb-4">Trailers</h2>
 
-                    {/* Trailers */}
                     <div className="space-y-6">
                         {movie.videos.results.map((trailer) => (
                             <div key={trailer.id} className="flex flex-col items-center">
