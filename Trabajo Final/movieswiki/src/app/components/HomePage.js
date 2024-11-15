@@ -75,6 +75,7 @@ const HomePage = ({ initialMovies, totalPages }) => {
                 >
                     Anterior
                 </button>
+                <a>{page}</a>
                 <button
                     onClick={() => fetchMovies(query, page + 1)}
                     className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
